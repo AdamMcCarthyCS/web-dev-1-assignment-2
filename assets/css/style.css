@@ -1,0 +1,6 @@
+/* I had to include this single line of CSS to override Bulma as the logo is 1.75 rem by 
+default in Bulma when you have an image inside a anchor tag. In my opinion it looks very bad */
+.brand-logo img {
+    height: 3rem;
+    max-height: 100%;
+}
