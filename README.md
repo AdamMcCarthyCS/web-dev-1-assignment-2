@@ -4,15 +4,15 @@
 
 A web application to display the weather for different cities globally.
 
-## Getting Started
+### Getting Started
 
-### Install Eleventy
+#### Install Eleventy
 
 ```bash
 npm install -g @11ty/eleventy
 ```
 
-### Run Eleventy
+#### Run Eleventy
 
 ```bash
 eleventy --serve
@@ -22,8 +22,15 @@ Now navigate to [http://localhost:8080](http://localhost:8080) to see your site.
 
 Hot reloading is enabled, so any changes you make to your files will be reflected in the browser.
 
-## Technologies
+### Technologies
 
 * [Eleventy](https://www.11ty.dev/)
 * [Bulma](https://bulma.io/)
 
+---
+
+#### Proof of concept 1 - Attributions
+- The weather icon was obtained [here](https://iconscout.com/free-icon/free-weather-icon_1100758) and edited using microsoft powerpoint by me to include text
+- Keep elements from stacking when narrowed using the is-mobile class found [here](https://bulma.io/documentation/columns/responsiveness/#mobile-columns)
+
+- The sun image used in the card was obtained [here](https://pngtree.com/freepng/sun-clipart-golden-yellow-gradient-sun-vector-material_5564308.html)
