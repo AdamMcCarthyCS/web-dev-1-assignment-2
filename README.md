@@ -32,3 +32,5 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 #### Proof of concept 1 - Attributions
 - The weather icon was obtained [here](https://iconscout.com/free-icon/free-weather-icon_1100758) and edited using microsoft powerpoint by me to include text
 - Keep elements from stacking when narrowed using the is-mobile class found [here](https://bulma.io/documentation/columns/responsiveness/#mobile-columns)
+
+- The sun image used in the card was obtained [here](https://pngtree.com/freepng/sun-clipart-golden-yellow-gradient-sun-vector-material_5564308.html)
