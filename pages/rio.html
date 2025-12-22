@@ -39,6 +39,8 @@
         </div>
 
         <!-- START LEFT PANEL -->
+
+        <!-- CURRENT WEATHER START -->
         <div class="column is-8">
             <section class="container box columns has-background-black is-vcentered">
                 <div class="column is-two-thirds">
@@ -61,6 +63,9 @@
                     </figure>
                 </div>
             </section>
+            <!-- CURRENT WEATHER END -->
+
+            <!-- TODAYS FORECAST START -->
             <section class="container columns is-mobile is-multiline has-text-centered box has-background-black ">
                 <div class="column is-12 has-text-light is-size-3">
                     <h1 class="has-text-weight-bold">Todays Forecast</h1>
@@ -134,26 +139,55 @@
                     </div>
                 </div>
             </section>
+            <!-- TODAYS FORECAST END -->
+
+            <!-- WEATHER INFO START -->
             <section class="container columns is-multiline is-mobile box has-background-black has-text-white">
                 <div class="column is-12">Weather Info</div>
                 <div class="column is-half has-text-left is-flex is-flex-direction-column is-gap-2">
-                    <div>Air Quality</div>
-                    <div>Feels Like</div>
-                    <div>Max Wind</div>
-                    
-                </div>
-                <div class="column is-flex is-flex-direction-column is-gap-2">
                     <div class="is-flex is-align-items-center is-gap-1">
                         <figure class="image is-32x32">
-                            <img src="/assets/images/wi-uv-index.svg" alt="">
+                            <img src="/assets/images/wi-visibility.svg" alt="sun icon">
                         </figure>
-                        <p>UV Index: 0</p>
+                        <p>Visibility: 37km </p>
                     </div>
-                    <div>Percipitation</div>
-                    <div>Humidity</div>
+                    <div class="is-flex is-align-items-center is-gap-1">
+                        <figure class="image is-32x32">
+                            <img src="/assets/images/wi-thermometer.svg" alt="sun icon">
+                        </figure>
+                        <p>Feels Like: 32&deg;C</p>
+                    </div>
+                    <div class="is-flex is-align-items-center is-gap-1">
+                        <figure class="image is-32x32">
+                            <img src="/assets/images/wi-strong-wind.svg" alt="sun icon">
+                        </figure>
+                        <p>Max Wind: 8km/h</p>
+                    </div>
+                </div>
+                <div class="column is-half is-flex is-flex-direction-column is-gap-2">
+                    <div class="is-flex is-align-items-center is-gap-1">
+                        <figure class="image is-32x32">
+                            <img src="/assets/images/wi-uv.svg" alt="sun icon">
+                        </figure>
+                        <p>UV Index: 10 (Very High)</p>
+                    </div>
+                    <div class="is-flex is-align-items-center is-gap-1">
+                        <figure class="image is-32x32">
+                            <img src="/assets/images/wi-raindrop.svg" alt="raindrop icon">
+                        </figure>
+                        <p>Percipitation: 0mm</p>
+                    </div>
+                    <div class="is-flex is-align-items-center is-gap-1">
+                        <figure class="image is-32x32">
+                            <img src="/assets/images/wi-humidity.svg" alt="">
+                        </figure>
+                        <p>Humidity: 50%</p>
+                    </div>
                 </div>
             </section>
         </div>
+        <!-- WEATHER INFO END -->
+
         <!-- END LEFT PANEL -->
 
         <!--- START RIGHT PANEL -->
