@@ -41,7 +41,7 @@
         <!-- START LEFT PANEL -->
 
         <!-- CURRENT WEATHER START -->
-        <div class="column is-8">
+        <div class="column">
             <section class="container box columns has-background-black is-vcentered">
                 <div class="column is-two-thirds">
                     <div class="card">
@@ -194,9 +194,33 @@
         <!-- END LEFT PANEL -->
 
         <!--- START RIGHT PANEL -->
-        <div class="column is-4">
+        <div class="is-flex is-flex-direction-column column is-4">
             <section class="box has-background-black">
-                <div class="column">Placeholder</div>
+
+                <div class="card is-flex is-flex-direction-column">
+                    <div class="card-header">
+                        <div class="card-header-title">
+                            7 Day Forecast
+                        </div>
+                    </div>
+                    
+                    <!-- START FORECAST DAY-->
+                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center">
+                        <p class="is-size-4">Today</p>
+                        <div class="is-flex is-align-items-center is-gap-1">
+                            <figure class="image is-64x64 is-inline-block">
+                                <img src="/assets/images/sun-image.png" alt="sun image">
+                            </figure>
+                            <p class="is-size-4 has-text-weight-bold">Hot</p>
+                        </div>
+                        <p class="has-text-weight-bold is-size-4">9&deg;C</p>
+                    </div>
+                    <div class="card-footer"></div>
+                    <!-- END FORECAST DAY-->
+
+                    
+                </div>
+                
             </section>
         </div>
         <!--- END RIGHT PANEL -->
