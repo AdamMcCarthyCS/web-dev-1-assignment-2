@@ -41,3 +41,6 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
   - I concluded that all card headers and footers in Bulma are flexbox containers by looking at the source repo for Bulma [here](https://github.com/jgthms/bulma/blob/main/sass/components/card.scss)
 - Change all weather icons in the project to use Weather icons pack by MerlinTheRed for consistency across site. Used under CC BY-SA 3.0 which i found [here](https://www.deviantart.com/merlinthered/art/plain-weather-icons-157162192)
 - For the icons in the weather info section I downloaded a pack of icons from [here](https://erikflowers.github.io/weather-icons/)
+#### Proof of concept 3 - Attributions
+- I took the weather for Rio from [here](https://www.accuweather.com/en/br/rio-de-janeiro/45449/weather-forecast/45449)
+- I used the same image set from the "Today's Forecast" section of Proof of Concept 1, which I downloaded from [here](https://pngtree.com/freepng/sun-clipart-golden-yellow-gradient-sun-vector-material_5564308.html?sol=downref&id=bef) and were designed by Nicole Jiang
