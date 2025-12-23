@@ -34,9 +34,9 @@
 
     <!-- START MAIN-->
      <main class="columns is-multiline box has-background-grey-darker is-centered">
-        <div class="column is-12 has-text-centered has-text-white">
-            <p class="is-size-1">Whether Weather</p>
-        </div>
+        <header class="column is-12 has-text-centered has-text-white">
+            <h1 id="page-heading"class="is-size-1">Whether Weather</h1>
+        </header>
 
         <!-- START LEFT PANEL -->
 
@@ -45,16 +45,16 @@
             <section class="container box columns has-background-black is-vcentered">
                 <div class="column is-two-thirds">
                     <div class="card">
-                        <div class="card-content is-flex is-flex-direction-column is-gap-2">
+                        <article class="card-content is-flex is-flex-direction-column is-gap-2">
                             <div>
-                                <h1 class="is-size-3 has-text-weight-bold">Rio di Janeiro</h1>
-                                <h2 class="has-text-grey">Chance of rain: 5%</h2>
+                                <p class="is-size-3 has-text-weight-bold">Rio di Janeiro</p>
+                                <p class="has-text-grey">Chance of rain: 5%</p>
                             </div>
                             <div>
-                                <h1 class="is-size-3 has-text-weight-bold">Temp: 30&deg;C</h1>
-                                <h2 class="has-text-grey">Lo/Hi: 21&deg;C/32&deg;C</h2>
+                                <p class="is-size-3 has-text-weight-bold">Temp: 30&deg;C</p>
+                                <p class="has-text-grey">Lo/Hi: 21&deg;C/32&deg;C</p>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
                 <div class="column is-one-third">
@@ -68,12 +68,15 @@
             <!-- TODAYS FORECAST START -->
             <section class="container columns is-mobile is-multiline has-text-centered box has-background-black ">
                 <div class="column is-12 has-text-light is-size-3">
-                    <h1 class="has-text-weight-bold">Todays Forecast</h1>
+                    <h2 class="has-text-weight-bold">Todays Forecast</h2>
                 </div>
+                
+                
+                <!-- FOUR HOUR FORECAST START-->
                 <div class="column is-one-quarter">
-                    <div class="card">
+                    <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <h3 class="card-header-title is-centered is-size-4 is-size-6-mobile">08:00</h3>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">08:00</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
@@ -85,12 +88,15 @@
                                 21&deg;C
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <!-- FOUR HOUR FORECAST END-->
+
+                <!-- FOUR HOUR FORECAST START-->
                 <div class="column is-one-quarter">
-                    <div class="card">
+                    <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <h3 class="card-header-title is-centered is-size-4 is-size-6-mobile">12:00</h3>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">12:00</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
@@ -102,12 +108,15 @@
                                 28&deg;C
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <!-- FOUR HOUR FORECAST END-->
+
+                <!-- FOUR HOUR FORECAST START-->
                 <div class="column is-one-quarter">
-                    <div class="card">
+                    <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <h3 class="card-header-title is-centered is-size-4 is-size-6-mobile">16:00</h3>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">16:00</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
@@ -119,12 +128,15 @@
                                 32&deg;C
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <!-- FOUR HOUR FORECAST END-->
+
+                <!-- FOUR HOUR FORECAST START-->
                 <div class="column is-one-quarter">
-                    <div class="card">
+                    <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <h3 class="card-header-title is-centered is-size-4 is-size-6-mobile">20:00</h3>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">20:00</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
@@ -136,14 +148,16 @@
                                 26&deg;C
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <!-- FOUR HOUR FORECAST END-->
+
             </section>
             <!-- TODAYS FORECAST END -->
 
             <!-- WEATHER INFO START -->
             <section class="box px-5 has-background-black has-text-white">
-                <div class="title has-text-white has-text-centered is-12">Weather Info</div>
+                <h2 class="title has-text-white has-text-centered is-12">Weather Info</h2>
                 
                 <div class="is-flex is-justify-content-space-between">
                     <div class="is-flex is-flex-direction-column is-gap-2">
@@ -151,7 +165,7 @@
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-visibility.svg" alt="sun icon">
                             </figure>
-                            <p>Visibility: 37km </p>
+                            <p>Visibility: 37km</p>
                         </div>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-32x32">
@@ -199,13 +213,13 @@
 
                 <div class="card py-6 is-flex is-flex-direction-column -">
                     <div class="card-header">
-                        <div class="title card-header-title">
+                        <h2 class="title card-header-title">
                             7 Day Forecast
-                        </div>
+                        </h2>
                     </div>
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center">
                         <p class="is-size-4">Today</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -214,12 +228,12 @@
                             <p class="is-size-4 has-text-weight-bold">Hot</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">32&deg;C</p>
-                    </div>
-                    <div class="card-footer"></div>
+                    </article>
+                    <div class="card-footer"></div> <!-- card footers included to make dividing line between days-->
                     <!-- END FORECAST DAY-->
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
                         <p class="is-size-4">Mon</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -228,12 +242,12 @@
                             <p class="is-size-4 has-text-weight-bold">Very Hot</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">35&deg;C</p>
-                    </div>
+                    </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
                         <p class="is-size-4">Tues</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -242,12 +256,12 @@
                             <p class="is-size-4 has-text-weight-bold">Very Hot</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">36&deg;C</p>
-                    </div>
+                    </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
                         <p class="is-size-4">Weds</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -256,12 +270,12 @@
                             <p class="is-size-4 has-text-weight-bold">Very Hot</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">35&deg;C</p>
-                    </div>
+                    </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
                         <p class="is-size-4">Thurs</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -270,12 +284,12 @@
                             <p class="is-size-4 has-text-weight-bold">Hot</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">31&deg;C</p>
-                    </div>
+                    </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
                         <p class="is-size-4">Fri</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -284,12 +298,12 @@
                             <p class="is-size-4 has-text-weight-bold">Hot</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">30&deg;C</p>
-                    </div>
+                    </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
                     
                     <!-- START FORECAST DAY-->
-                    <div class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
+                    <article class="card-content is-flex is-justify-content-space-between is-align-items-center is-gap-1">
                         <p class="is-size-4">Sat</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
@@ -298,7 +312,7 @@
                             <p class="is-size-4 has-text-weight-bold">Humid</p>
                         </div>
                         <p class="has-text-weight-bold is-size-4">28&deg;C</p>
-                    </div>
+                    </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
 
