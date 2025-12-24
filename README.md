@@ -47,3 +47,5 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 #### Dev Release 1
 - I used the same image set from the "Today's Forecast" section of Proof of Concept 1, which I downloaded from [here](https://pngtree.com/freepng/sun-clipart-golden-yellow-gradient-sun-vector-material_5564308.html?sol=downref&id=bef) and were designed by Nicole Jiang
 - I took the weather data from [here](https://www.accuweather.com/en/world-weather)
+#### Dev Release 2
+- At this point I had to make a decision to either implement the rest of the pages using page generation through loops and pagaination or to copy paste the code and fill in the details then later convert everything to pagination. I have decided to try to implement pagination now. No risk no reward, and the time i save on copy pasting i will use to learn pagination.
