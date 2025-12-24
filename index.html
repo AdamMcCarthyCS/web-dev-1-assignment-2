@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-background-grey-darker" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Whether Weather</title>
   <link rel="icon" sizes="32x32" href="/assets/images/weather-icon.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
     <!-- START NAV -->
     <nav class="navbar is-dark has-background-black">
         <div class="navbar-brand">
-            <a href="" class="navbar-item brand-logo is-dark">
-                <img src="/assets/images/logo-with-text.png" alt="Logo with text whether weather">
+            <a href="" class="is-hidden-mobile navbar-item brand-logo is-dark">
+                <p class="is-size-3 has-text-weight-bold">Whether Weather</p>
+            </a>
+
+            <a href="" class="is-hidden-tablet navbar-item brand-logo is-dark">
+                <img src="/assets/images/main-logo-ww.png" alt="Whether Weather">
             </a>
         
             <span class="navbar-burger has-background-black" data-target="navbarMenu" aria-expanded="false">
@@ -23,7 +27,7 @@
             </span>
         </div>
         <div class="navbar-end">
-            <div id="navbarMenu" class="navbar-menu">
+            <div id="navbarMenu" class="navbar-menu is-gap-3 px-6">
                 <a href="" class="navbar-item has-text-white">TBA</a>
                 <a href="" class="navbar-item has-text-white">TBA</a>
                 <a href="" class="navbar-item has-text-white">TBA</a>
@@ -32,13 +36,198 @@
     </nav>
     <!-- END NAV -->
 
+    <!-- START MAIN-->
+     <main class="columns is-multiline box has-background-grey-darker is-centered is-gap-3">
+        
+        <!-- START HEADER -->
+        <header class="column is-12">
+            <div class="is-flex is-gap-6 is-justify-content-center is-align-items-center">
+                <img class="is-hidden-mobile" src="/assets/images/main-logo-ww.png" alt="Whether Weather">
+                <h1 class="is-size-1 has-text-light">Dashboard</h1>
+            </div>
+        </header>
+        <!-- END HEADER -->
+        
+        <!-- START INTERACTIVE CARDS-->
+
+        
+        <section class="columns is-gap-1 box is-centered">
+            <!-- START COLUMN 1-->
+            <div class="column is-4 py-5">
+                <!-- START CLICKABLE CARD-->
+                 <div class="is-flex is-flex-direction-column is-gap-3">
+                     <a href="" class="box columns has-background-black is-vcentered">
+                                     <div class="column is-two-thirds">
+                        <div class="card">
+                            <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Sao Paulo, Brazil</p>
+                                    <p class="has-text-grey">Chance of percipitation: 5%</p>
+                                </div>
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Temp: 30&deg;C</p>
+                                    <p class="has-text-grey">Lo/Hi: 21&deg;C/32&deg;C</p>
+                                </div>
+                            </article>
+                        </div>
+                                     </div>
+                                     <div class="column is-one-third is-flex is-justify-content-center">
+                        <figure class="image is-128x128">
+                            <img src="/assets/images/sun-image.png" alt="clip art image of the sun">
+                        </figure>
+                                     </div>
+                                 </a>
+                                     <!-- END CLICKABLE CARD-->
+                     
+                                     <!-- START CLICKABLE CARD-->
+                     <a class=" box columns has-background-black is-vcentered">
+                                     <div class="column is-two-thirds">
+                        <div class="card">
+                            <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Tokyo, Japan</p>
+                                    <p class="has-text-grey">Chance of percipitation: 10%</p>
+                                </div>
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Temp: 7&deg;C</p>
+                                    <p class="has-text-grey">Lo/Hi: 5&deg;C/8&deg;C</p>
+                                </div>
+                            </article>
+                        </div>
+                                     </div>
+                                     <div class="column is-one-third is-flex is-justify-content-center">
+                        <figure class="image is-128x128">
+                            <img src="/assets/images/moon-cloudy.svg" alt="clip art image of clouded moon">
+                        </figure>
+                                     </div>
+                                 </a>
+                 </div>
+                <!-- END CLICKABLE CARD-->
+            </div>
+            <!-- END COLUMN 1-->
+             
+            <!-- START COLUMN 2-->
+            <div class="column is-4 py-5">
+                <!-- START CLICKABLE CARD-->
+                 <div class="is-flex is-flex-direction-column is-gap-3">
+                     <a href="" class="box columns has-background-black is-vcentered">
+                                     <div class="column is-two-thirds">
+                        <div class="card">
+                            <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">London, England</p>
+                                    <p class="has-text-grey">Chance of percipitation: 40%</p>
+                                </div>
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Temp: 6&deg;C</p>
+                                    <p class="has-text-grey">Lo/Hi: 4&deg;C/6&deg;C</p>
+                                </div>
+                            </article>
+                        </div>
+                                     </div>
+                                     <div class="column is-one-third is-flex is-justify-content-center">
+                        <figure class="image is-128x128">
+                            <img src="/assets/images/sun-heavy-cloud.svg" alt="clip art image of clouded sun">
+                        </figure>
+                                     </div>
+                                 </a>
+                                     <!-- END CLICKABLE CARD-->
+                     
+                                     <!-- START CLICKABLE CARD-->
+                     <a href="" class="box columns has-background-black is-vcentered">
+                                     <div class="column is-two-thirds">
+                        <div class="card">
+                            <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Madras, India</p>
+                                    <p class="has-text-grey">Chance of percipitation: 0%</p>
+                                </div>
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Temp: 25&deg;C</p>
+                                    <p class="has-text-grey">Lo/Hi: 23&deg;C/29&deg;C</p>
+                                </div>
+                            </article>
+                        </div>
+                                     </div>
+                                     <div class="column is-one-third is-flex is-justify-content-center">
+                        <figure class="image is-128x128">
+                            <img src="/assets/images/moon.svg" alt="clip art image of the moon">
+                        </figure>
+                                     </div>
+                                 </a>
+                 </div>
+                <!-- END CLICKABLE CARD-->
+            </div>
+            <!-- END COLUMN 2-->
+
+            <!-- START COLUMN 3-->
+            <div class="column is-4 py-5">
+                <!-- START CLICKABLE CARD-->
+                 <div class="is-flex is-flex-direction-column is-gap-3 ">
+                     <a href="" class="box columns has-background-black is-vcentered">
+                                     <div class="column is-two-thirds">
+                        <div class="card">
+                            <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Perth, Australia</p>
+                                    <p class="has-text-grey">Chance of percipitation: 0%</p>
+                                </div>
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Temp: 30&deg;C</p>
+                                    <p class="has-text-grey">Lo/Hi: 19&deg;C/39&deg;C</p>
+                                </div>
+                            </article>
+                        </div>
+                                     </div>
+                                     <div class="column is-one-third is-flex is-justify-content-center">
+                        <figure class="image is-128x128">
+                            <img src="/assets/images/moon-cloudy.svg" alt="clip art image of clouded moon">
+                        </figure>
+                                     </div>
+                                 </a>
+                                     <!-- END CLICKABLE CARD-->
+                     
+                                     <!-- START CLICKABLE CARD-->
+                     <a href="" class="box columns has-background-black is-vcentered">
+                                     <div class="column is-two-thirds">
+                        <div class="card">
+                            <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Volgograd, Russia</p>
+                                    <p class="has-text-grey">Chance of percipitation: 15%</p>
+                                </div>
+                                <div>
+                                    <p class="is-size-4 has-text-weight-bold">Temp: -7&deg;C</p>
+                                    <p class="has-text-grey">Lo/Hi: -1&deg;C/-12&deg;C</p>
+                                </div>
+                            </article>
+                        </div>
+                                     </div>
+                                    <div class="column is-one-third is-flex is-justify-content-center">
+                        <figure class="image is-128x128">
+                            <img src="/assets/images/heavy-cloudy.svg" alt="clip art image of heavy-cloud">
+                        </figure>
+                                     </div>
+                                 </a>
+                 </div>
+                <!-- END CLICKABLE CARD-->
+            </div>
+            <!-- END COLUMN 3-->
+
+        </section>
+        
+         
+        <!-- END INTERACTIVE CARDS-->
+     </main>
+     <!-- END MAIN -->
+
     <!-- START FOOTER-->
      <footer class="footer has-background-black has-text-white">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <img src="/images/logo-white.png" alt="dotify" class="image is-16x16 is-inline">
-                    Dotify - Your.Music
+                    <img src="/assets/images/weather-icon.svg" alt="Whether Weather by Adam McCarthy, 2025" class="image is-16x16 is-inline">
+                    Whether Weather — Adam McCarthy 2025 &copy;
                 </p>
             </div>
         </div>
