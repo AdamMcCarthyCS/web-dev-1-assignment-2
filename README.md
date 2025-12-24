@@ -44,3 +44,6 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 #### Proof of concept 3 - Attributions
 - I took the weather for Rio from [here](https://www.accuweather.com/en/br/rio-de-janeiro/45449/weather-forecast/45449)
 - I used the same image set from the "Today's Forecast" section of Proof of Concept 1, which I downloaded from [here](https://pngtree.com/freepng/sun-clipart-golden-yellow-gradient-sun-vector-material_5564308.html?sol=downref&id=bef) and were designed by Nicole Jiang
+#### Dev Release 1
+- I used the same image set from the "Today's Forecast" section of Proof of Concept 1, which I downloaded from [here](https://pngtree.com/freepng/sun-clipart-golden-yellow-gradient-sun-vector-material_5564308.html?sol=downref&id=bef) and were designed by Nicole Jiang
+- I took the weather data from [here](https://www.accuweather.com/en/world-weather)
