@@ -49,3 +49,4 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 - I took the weather data from [here](https://www.accuweather.com/en/world-weather)
 #### Dev Release 2
 - At this point I had to make a decision to either implement the rest of the pages using page generation through loops and pagaination or to copy paste the code and fill in the details then later convert everything to pagination. I have decided to try to implement pagination now. No risk no reward, and the time i save on copy pasting i will use to learn pagination.
+- Added a navbar dropdown for the cities by following the example on the [Bulma Documentation](https://bulma.io/documentation/components/navbar/#dropdown-menu)
