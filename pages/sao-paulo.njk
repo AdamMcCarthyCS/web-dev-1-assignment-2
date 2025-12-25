@@ -95,25 +95,7 @@ week:
     
 ---
 
-        <!-- START LEFT PANEL -->
-
-            {% include "current-weather-section.njk" %}
-
-            <!-- TODAYS FORECAST START -->
-            <section class="container columns is-mobile is-multiline has-text-centered box has-background-black ">
-                <div class="column is-12 has-text-light is-size-3">
-                    <h2 class="has-text-weight-bold">Todays Forecast</h2>
-                </div>
-                
-                
-                {% include "todays-forecast-cards.njk" %}
-
-            </section>
-            <!-- TODAYS FORECAST END -->
-
-            {% include "weather-info-section.njk" %}
-
-        <!-- END LEFT PANEL -->
+        {% include "left-panel.njk" %}
 
         <!--- START RIGHT PANEL -->
         <div class="is-flex is-flex-direction-column column is-4-desktop is-12-tablet">
@@ -134,5 +116,3 @@ week:
         </div>
         <!--- END RIGHT PANEL -->
         
-     </main>
-     <!-- END MAIN -->
