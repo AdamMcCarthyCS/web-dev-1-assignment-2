@@ -1,0 +1,101 @@
+--- 
+layout: layout.njk 
+
+# My goal in writing out the variables here is two fold
+# 1. I want to use pagination and I need each page to have a set of constants to fill it in. 
+# 2. Outside of this assignment I plan to continue building this out so that it has a backend which updates
+# the pages. I want to be able to set the values using an API call (havent figured out how to do this yet, but
+# my programming experience tells me to keep everything in one place and then put the logic for changing it in later)
+
+# Variables in page
+
+# Title 
+pageTitle: "Sao Paulo"
+
+# Current Weather Section 
+current:
+ city: "Sao Paulo, Brazil"
+ precip: "5"
+ temp: 30
+ low: 21
+ high: 32
+ img: "/assets/images/sun-image.png"
+ imgAlt: "sun image"
+
+# Four card forecast for Today
+today:
+  block1:
+    time: "08:00"
+    img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
+    temp: 21
+  block2:
+    time: "12:00" 
+    img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
+    temp: 28
+  block3:
+    time: "16:00"
+    img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
+    temp: 32
+  block4:
+    time: "20:00"
+    img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
+    temp: 26
+
+# Weather info section 
+weatherInfo:
+  visibility: "37km"
+  feels: 32
+  maxWind: "8"
+  uvIdx: "10 (Very High)"
+  precip: 0
+  humidity: 50
+
+# Seven day forecast section 
+week:
+  today:
+    img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
+    desc: "Hot"
+    temp: 32
+  mon:
+    img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
+    desc: "Very Hot"
+    temp: 35
+  tues:
+    img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
+    desc: "Very Hot"
+    temp: 36
+  weds:
+    img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
+    desc: "Very Hot"
+    temp: 35
+  thurs:
+    img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
+    desc: "Hot"
+    temp: 31
+  fri:
+    img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
+    desc: "Hot"
+    temp: 30
+  sat:
+    img: "/assets/images/sun-rain-image.svg"
+    imgAlt: "sun and rain image"
+    desc: "Hot"
+    temp: 28
+  
+    
+---
+
+        {% include "left-panel.njk" %}
+
+        {% include "right-panel.njk" %}
+        
