@@ -50,3 +50,10 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 #### Dev Release 2
 - At this point I had to make a decision to either implement the rest of the pages using page generation through loops and pagaination or to copy paste the code and fill in the details then later convert everything to pagination. I have decided to try to implement pagination now. No risk no reward, and the time i save on copy pasting i will use to learn pagination.
 - Added a navbar dropdown for the cities by following the example on the [Bulma Documentation](https://bulma.io/documentation/components/navbar/#dropdown-menu)
+#### Nunjucks refactor
+- I replaced the values which will change in each city page with nunjucks variables following [this documentation](https://mozilla.github.io/nunjucks/templating.html#variables)
+- I have previously worked with YAML before on [this course which I completed](https://www.udemy.com/course/python-3-deep-dive-part-3/?couponCode=CM251225G1) (see certificate [here](https://github.com/AdamMcCarthyCS/adammccarthycs/blob/main/certificates/Python%20Deep%20Dive%20Part%203.pdf)) in the section Serialization and Deserialization > PyYaml
+- As you can write YAML out as key-value pairs,  it allows a neat layout of the variables rather than a dump of them with no organisation. Docs on key, value YAML pairs are [here](https://yaml.org/spec/1.2.2/#mapping). Basically in a nutshell you can write Yaml like:
+  collection:
+    \- item
+  - This then allows you to call it in nunjucks as a variable using collection.item 
