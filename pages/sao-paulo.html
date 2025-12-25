@@ -15,21 +15,24 @@ pageTitle: "Sao Paulo"
 # Current Weather Section 
 current:
  city: "Sao Paulo, Brazil"
- precip: 5
+ precip: "5"
  temp: 30
  low: 21
  high: 32
  img: "/assets/images/sun-image.png"
+ imgAlt: "sun image"
 
 # Four card forecast for Today
 today:
   block1:
     time: "08:00"
     img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
     temp: 21
   block2:
     time: "12:00"
     img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
     temp: 28
   block3:
     time: "16:00"
@@ -38,44 +41,53 @@ today:
   block4:
     time: "20:00"
     img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
     temp: 26
 
 # Weather info section 
 weatherInfo:
   visibility: "37km"
   feels: 32
-  maxWind: "8km/h"
+  maxWind: "8"
   uvIdx: "10 (Very High)"
-  precip: "0mm"
+  precip: 0
+  humidity: 50
 
 # Seven day forecast section 
 week:
   today:
     img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
     desc: "Hot"
     temp: 32
   mon:
     img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
     desc: "Very Hot"
     temp: 35
   tues:
     img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
     desc: "Very Hot"
     temp: 36
   weds:
     img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
     desc: "Very Hot"
     temp: 35
   thurs:
     img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
     desc: "Hot"
     temp: 31
   fri:
     img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud image"
     desc: "Hot"
     temp: 30
   sat:
     img: "/assets/images/sun-rain-image.svg"
+    imgAlt: "sun and rain image"
     desc: "Hot"
     temp: 28
   
@@ -91,19 +103,19 @@ week:
                     <div class="card">
                         <article class="card-content is-flex is-flex-direction-column is-gap-2">
                             <div>
-                                <p class="is-size-3 has-text-weight-bold">Sao Paulo, Brazil</p>
-                                <p class="has-text-grey">Chance of rain: 5%</p>
+                                <p class="is-size-3 has-text-weight-bold">{{ current.city }}</p>
+                                <p class="has-text-grey">Chance of precipitation: {{ current.precip }}%</p>
                             </div>
                             <div>
-                                <p class="is-size-3 has-text-weight-bold">Temp: 30&deg;C</p>
-                                <p class="has-text-grey">Lo/Hi: 21&deg;C/32&deg;C</p>
+                                <p class="is-size-3 has-text-weight-bold">Temp: {{current.temp}}&deg;C</p>
+                                <p class="has-text-grey">Lo/Hi: {{ current.low }}&deg;C/{{ current.high }}&deg;C</p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="column is-one-third">
                     <figure class="image">
-                        <img src="/assets/images/sun-image.png" alt="clip art image of the sun">
+                        <img src="{{ current.img }}" alt="{{ current.imgAlt }}">
                     </figure>
                 </div>
             </section>
@@ -120,16 +132,16 @@ week:
                 <div class="column is-one-quarter">
                     <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">08:00</p>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block1.time }}</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
-                                <img src="/assets/images/sun-cloud-image.svg" alt="clip art image of the sun">
+                                <img src="{{ today.block1.img }}" alt="{{ today.block1.imgAlt }}">
                             </figure>
                         </div>
                         <div class="card-footer is-justify-content-center">
                             <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                21&deg;C
+                                {{ today.block1.temp }}&deg;C
                             </div>
                         </div>
                     </article>
@@ -140,16 +152,16 @@ week:
                 <div class="column is-one-quarter">
                     <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">12:00</p>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block2.time }}</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
-                                <img src="/assets/images/sun-image.png" alt="clip art image of the sun">
+                                <img src="{{ today.block2.img }}" alt="{{ today.block2.imgAlt }}">
                             </figure>
                         </div>
                         <div class="card-footer is-justify-content-center">
                             <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                28&deg;C
+                                {{ today.block2.temp }}&deg;C
                             </div>
                         </div>
                     </article>
@@ -160,16 +172,16 @@ week:
                 <div class="column is-one-quarter">
                     <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">16:00</p>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block3.time }}</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
-                                <img src="/assets/images/sun-image.png" alt="clip art image of the sun">
+                                <img src="{{ today.block3.img }}" alt="{{ today.block3.imgAlt }}">
                             </figure>
                         </div>
                         <div class="card-footer is-justify-content-center">
                             <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                32&deg;C
+                                {{ today.block3.temp }}&deg;C
                             </div>
                         </div>
                     </article>
@@ -180,16 +192,16 @@ week:
                 <div class="column is-one-quarter">
                     <article class="card">
                         <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">20:00</p>
+                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block4.time }}</p>
                         </div>
                         <div class="card-image">
                             <figure class="image is-inline-block">
-                                <img src="/assets/images/sun-cloud-image.svg" alt="clip art image of the sun">
+                                <img src="{{ today.block4.img }}" alt="{{ today.block4.imgAlt }}">
                             </figure>
                         </div>
                         <div class="card-footer is-justify-content-center">
                             <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                26&deg;C
+                                {{ today.block4.temp }}&deg;C
                             </div>
                         </div>
                     </article>
@@ -209,19 +221,19 @@ week:
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-visibility.svg" alt="sun icon">
                             </figure>
-                            <p class="is-size-5">Visibility: 37km</p>
+                            <p class="is-size-5">Visibility: {{ weatherInfo.visibility }}</p>
                         </div>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-thermometer.svg" alt="sun icon">
                             </figure>
-                            <p class="is-size-5">Feels Like: 32&deg;C</p>
+                            <p class="is-size-5">Feels Like: {{ weatherInfo.feels }}&deg;C</p>
                         </div>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-strong-wind.svg" alt="sun icon">
                             </figure>
-                            <p class="is-size-5">Max Wind: 8km/h</p>
+                            <p class="is-size-5">Max Wind: {{ weatherInfo.maxWind }}km/h</p>
                         </div>
                     </div>
                     <div class="is-flex is-flex-direction-column is-gap-2">
@@ -229,19 +241,19 @@ week:
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-uv.svg" alt="sun icon">
                             </figure>
-                            <p class="is-size-5">UV Index: 10 (Very High)</p>
+                            <p class="is-size-5">UV Index: {{ weatherInfo.uvIdx }}</p>
                         </div>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-raindrop.svg" alt="raindrop icon">
                             </figure>
-                            <p class="is-size-5">Percipitation: 0mm expected</p>
+                            <p class="is-size-5">Precipitation: {{ weatherInfo.precip }}mm expected</p>
                         </div>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-32x32">
                                 <img src="/assets/images/wi-humidity.svg" alt="">
                             </figure>
-                            <p class="is-size-5">Humidity: 50%</p>
+                            <p class="is-size-5">Humidity: {{ weatherInfo.humidity }}%</p>
                         </div>
                     </div>
                 </div>
@@ -267,11 +279,11 @@ week:
                         <p class="is-size-4">Today</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-image.png" alt="sun image">
+                                <img src="{{ week.today.img }}" alt="{{ week.today.imgAlt}}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Hot</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.today.desc}}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">32&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.today.temp }}&deg;C</p>
                     </article>
                     <div class="card-footer"></div> <!-- card footers included to make dividing line between days-->
                     <!-- END FORECAST DAY-->
@@ -281,11 +293,11 @@ week:
                         <p class="is-size-4">Mon</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-image.png" alt="sun image">
+                                <img src="{{ week.mon.img }}" alt="{{ week.mon.imgAlt }}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Very Hot</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.mon.desc }}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">35&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.mon.temp }}&deg;C</p>
                     </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
@@ -295,11 +307,11 @@ week:
                         <p class="is-size-4">Tues</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-image.png" alt="sun image">
+                                <img src="{{ week.tues.img }}" alt="{{ week.tues.imgAlt }}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Very Hot</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.tues.desc }}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">36&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.tues.temp }}&deg;C</p>
                     </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
@@ -309,11 +321,11 @@ week:
                         <p class="is-size-4">Weds</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-image.png" alt="sun image">
+                                <img src="{{ week.weds.img }}" alt="{{ week.weds.imgAlt }}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Very Hot</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.weds.desc }}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">35&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.weds.temp }}&deg;C</p>
                     </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
@@ -323,11 +335,11 @@ week:
                         <p class="is-size-4">Thurs</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-cloud-image.svg" alt="sun and cloud clip art">
+                                <img src="{{ week.thurs.img }}" alt="{{ week.thurs.imgAlt }}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Hot</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.thurs.desc }}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">31&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.thurs.temp }}&deg;C</p>
                     </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
@@ -337,11 +349,11 @@ week:
                         <p class="is-size-4">Fri</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-cloud-image.svg" alt="sun and cloud clip art">
+                                <img src="{{ week.fri.img }}" alt="{{ week.fri.imgAlt }}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Hot</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.fri.desc }}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">30&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.fri.temp}}&deg;C</p>
                     </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
@@ -351,11 +363,11 @@ week:
                         <p class="is-size-4">Sat</p>
                         <div class="is-flex is-align-items-center is-gap-1">
                             <figure class="image is-64x64 is-inline-block">
-                                <img src="/assets/images/sun-rain-image.svg" alt="sun and rain clip art">
+                                <img src="{{ week.sat.img }}" alt="{{ week.sat.imgAlt }}">
                             </figure>
-                            <p class="is-size-4 has-text-weight-bold">Humid</p>
+                            <p class="is-size-4 has-text-weight-bold">{{ week.sat.desc }}</p>
                         </div>
-                        <p class="has-text-weight-bold is-size-4">28&deg;C</p>
+                        <p class="has-text-weight-bold is-size-4">{{ week.sat.temp }}&deg;C</p>
                     </article>
                     <div class="card-footer"></div>
                     <!-- END FORECAST DAY-->
