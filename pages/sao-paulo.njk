@@ -30,13 +30,14 @@ today:
     imgAlt: "sun and cloud image"
     temp: 21
   block2:
-    time: "12:00"
+    time: "12:00" 
     img: "/assets/images/sun-image.png"
     imgAlt: "sun image"
     temp: 28
   block3:
     time: "16:00"
     img: "/assets/images/sun-image.png"
+    imgAlt: "sun image"
     temp: 32
   block4:
     time: "20:00"
@@ -128,85 +129,7 @@ week:
                 </div>
                 
                 
-                <!-- FOUR HOUR FORECAST START-->
-                <div class="column is-one-quarter">
-                    <article class="card">
-                        <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block1.time }}</p>
-                        </div>
-                        <div class="card-image">
-                            <figure class="image is-inline-block">
-                                <img src="{{ today.block1.img }}" alt="{{ today.block1.imgAlt }}">
-                            </figure>
-                        </div>
-                        <div class="card-footer is-justify-content-center">
-                            <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                {{ today.block1.temp }}&deg;C
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- FOUR HOUR FORECAST END-->
-
-                <!-- FOUR HOUR FORECAST START-->
-                <div class="column is-one-quarter">
-                    <article class="card">
-                        <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block2.time }}</p>
-                        </div>
-                        <div class="card-image">
-                            <figure class="image is-inline-block">
-                                <img src="{{ today.block2.img }}" alt="{{ today.block2.imgAlt }}">
-                            </figure>
-                        </div>
-                        <div class="card-footer is-justify-content-center">
-                            <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                {{ today.block2.temp }}&deg;C
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- FOUR HOUR FORECAST END-->
-
-                <!-- FOUR HOUR FORECAST START-->
-                <div class="column is-one-quarter">
-                    <article class="card">
-                        <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block3.time }}</p>
-                        </div>
-                        <div class="card-image">
-                            <figure class="image is-inline-block">
-                                <img src="{{ today.block3.img }}" alt="{{ today.block3.imgAlt }}">
-                            </figure>
-                        </div>
-                        <div class="card-footer is-justify-content-center">
-                            <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                {{ today.block3.temp }}&deg;C
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- FOUR HOUR FORECAST END-->
-
-                <!-- FOUR HOUR FORECAST START-->
-                <div class="column is-one-quarter">
-                    <article class="card">
-                        <div class="card-header is-justify-content-center">
-                            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ today.block4.time }}</p>
-                        </div>
-                        <div class="card-image">
-                            <figure class="image is-inline-block">
-                                <img src="{{ today.block4.img }}" alt="{{ today.block4.imgAlt }}">
-                            </figure>
-                        </div>
-                        <div class="card-footer is-justify-content-center">
-                            <div class="card-footer-item is-size-3 is-size-5-mobile">
-                                {{ today.block4.temp }}&deg;C
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- FOUR HOUR FORECAST END-->
+                {% include "todays-forecast-cards.njk" %}
 
             </section>
             <!-- TODAYS FORECAST END -->
