@@ -97,30 +97,7 @@ week:
 
         <!-- START LEFT PANEL -->
 
-        <!-- CURRENT WEATHER START -->
-        <div class="column is-8-desktop is-12-tablet">
-            <section class="container box columns has-background-black is-vcentered">
-                <div class="column is-two-thirds">
-                    <div class="card">
-                        <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                            <div>
-                                <p class="is-size-3 has-text-weight-bold">{{ current.city }}</p>
-                                <p class="has-text-grey">Chance of precipitation: {{ current.precip }}%</p>
-                            </div>
-                            <div>
-                                <p class="is-size-3 has-text-weight-bold">Temp: {{current.temp}}&deg;C</p>
-                                <p class="has-text-grey">Lo/Hi: {{ current.low }}&deg;C/{{ current.high }}&deg;C</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <figure class="image">
-                        <img src="{{ current.img }}" alt="{{ current.imgAlt }}">
-                    </figure>
-                </div>
-            </section>
-            <!-- CURRENT WEATHER END -->
+            {% include "current-weather.njk" %}
 
             <!-- TODAYS FORECAST START -->
             <section class="container columns is-mobile is-multiline has-text-centered box has-background-black ">
