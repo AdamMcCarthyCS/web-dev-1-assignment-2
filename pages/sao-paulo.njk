@@ -97,22 +97,5 @@ week:
 
         {% include "left-panel.njk" %}
 
-        <!--- START RIGHT PANEL -->
-        <div class="is-flex is-flex-direction-column column is-4-desktop is-12-tablet">
-            <section class="box has-background-black">
-
-                <div class="card py-6 is-flex is-flex-direction-column -">
-                    <div class="card-header">
-                        <h2 class="title card-header-title">
-                            7 Day Forecast
-                        </h2>
-                    </div>
-                    
-                    {% include "seven-day-forecast-cards.njk" %}
-                    
-                </div>
-                
-            </section>
-        </div>
-        <!--- END RIGHT PANEL -->
+        {% include "right-panel.njk" %}
         
