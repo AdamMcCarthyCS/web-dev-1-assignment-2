@@ -6,7 +6,33 @@
   <title>Whether Weather</title>
   <link rel="icon" sizes="32x32" href="/assets/images/weather-icon.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
-
+  
+  <!-- HAMBURGER SCRIPT START -->
+  <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                        
+                    });
+                });
+                
+            });
+    </script>
+    <!-- HAMBURGER SCRIPT END-->
+     
 </head>
 <body>
     <!-- START NAV -->
@@ -28,9 +54,19 @@
         </div>
         <div class="navbar-end">
             <div id="navbarMenu" class="navbar-menu is-gap-3 px-6">
-                <a href="" class="navbar-item has-text-white">TBA</a>
-                <a href="" class="navbar-item has-text-white">TBA</a>
-                <a href="" class="navbar-item has-text-white">TBA</a>
+                <a href="" class="navbar-item has-text-white is-size-5">Dashboard</a>
+                <div href="" class="navbar-item has-dropdown is-hoverable">
+                    <a href="" class="navbar-link has-text-white is-size-5">Cities</a>
+                    <div class="navbar-dropdown">
+                        <a href="/pages/sao-paulo" class="navbar-item is-size-6">Sao Paulo</a>
+                        <a href="/pages/tokyo" class="navbar-item is-size-6">Tokyo</a>
+                        <a href="/pages/london" class="navbar-item is-size-6">London</a>
+                        <a href="/pages/madras" class="navbar-item is-size-6">Madras</a>
+                        <a href="/pages/perth" class="navbar-item is-size-6">Perth</a>
+                        <a href="/pages/volgograd" class="navbar-item is-size-6">Volgograd</a>
+                    </div>
+                </div>
+                <a href="" class="navbar-item has-text-white is-size-5">Settings</a>
             </div>
         </div>
     </nav>
@@ -56,7 +92,7 @@
             <div class="column is-4 py-5">
                 <!-- START CLICKABLE CARD-->
                  <div class="is-flex is-flex-direction-column is-gap-3">
-                     <a href="" class="box columns has-background-black is-vcentered">
+                     <a href="/pages/sao-paulo" class="box columns has-background-black is-vcentered">
                                      <div class="column is-two-thirds">
                         <div class="card">
                             <article class="card-content is-flex is-flex-direction-column is-gap-2">
@@ -80,7 +116,7 @@
                                      <!-- END CLICKABLE CARD-->
                      
                                      <!-- START CLICKABLE CARD-->
-                     <a class=" box columns has-background-black is-vcentered">
+                     <a href="pages/tokyo" class="box columns has-background-black is-vcentered">
                                      <div class="column is-two-thirds">
                         <div class="card">
                             <article class="card-content is-flex is-flex-direction-column is-gap-2">
@@ -110,7 +146,7 @@
             <div class="column is-4 py-5">
                 <!-- START CLICKABLE CARD-->
                  <div class="is-flex is-flex-direction-column is-gap-3">
-                     <a href="" class="box columns has-background-black is-vcentered">
+                     <a href="/pages/london" class="box columns has-background-black is-vcentered">
                                      <div class="column is-two-thirds">
                         <div class="card">
                             <article class="card-content is-flex is-flex-direction-column is-gap-2">
@@ -134,7 +170,7 @@
                                      <!-- END CLICKABLE CARD-->
                      
                                      <!-- START CLICKABLE CARD-->
-                     <a href="" class="box columns has-background-black is-vcentered">
+                     <a href="/pages/madras" class="box columns has-background-black is-vcentered">
                                      <div class="column is-two-thirds">
                         <div class="card">
                             <article class="card-content is-flex is-flex-direction-column is-gap-2">
@@ -164,7 +200,7 @@
             <div class="column is-4 py-5">
                 <!-- START CLICKABLE CARD-->
                  <div class="is-flex is-flex-direction-column is-gap-3 ">
-                     <a href="" class="box columns has-background-black is-vcentered">
+                     <a href="/pages/perth" class="box columns has-background-black is-vcentered">
                                      <div class="column is-two-thirds">
                         <div class="card">
                             <article class="card-content is-flex is-flex-direction-column is-gap-2">
@@ -188,7 +224,7 @@
                                      <!-- END CLICKABLE CARD-->
                      
                                      <!-- START CLICKABLE CARD-->
-                     <a href="" class="box columns has-background-black is-vcentered">
+                     <a href="/pages/volgograd" class="box columns has-background-black is-vcentered">
                                      <div class="column is-two-thirds">
                         <div class="card">
                             <article class="card-content is-flex is-flex-direction-column is-gap-2">
