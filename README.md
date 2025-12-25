@@ -57,3 +57,5 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
   collection:
     \- item
   - This then allows you to call it in nunjucks as a variable using collection.item 
+#### Eleventy refactor Cities (READ ME)
+- Here I stumbled completely by mistake onto what I think is Eleventy's coolest feature. I realized after I had made all the variables into key, value pairs in YAML that some of the variables would exist on other Nunjucks template pages. I thought I was screwed and would have to abandon the idea of pagination because the variables exist on all separate pages. But when eleventy builds the pages it finds the variables in the other templates and fills them in as part of building the current page...CLASS...Genuinely, I was only moderately convinced by Eleventy until this moment, but now I think its great!!!
