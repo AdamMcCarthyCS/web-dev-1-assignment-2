@@ -61,7 +61,6 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 - Here I stumbled completely by mistake onto what I think is Eleventy's coolest feature. I realized after I had made all the variables into key, value pairs in YAML that some of the variables would exist on other Nunjucks template pages. I thought I was screwed and would have to abandon the idea of pagination because the variables exist on all separate pages. But when eleventy builds the pages it finds the variables in the other templates and fills them in as part of building the current page...CLASS...Genuinely, I was only moderately convinced by Eleventy until this moment, but now I think its great!!!
 - I refactored the todays forecast cards into a single loop by following [this template](https://mozilla.github.io/nunjucks/templating.html#for)
 #### Dev pagination sandbox
-#### Pagination Sandbox
 - This was the most painful part of the assignment so far. What I learned here
   - Eleventy doesnt support YAML natively in _data folder [see here](https://www.11ty.dev/docs/data-custom/?utm_source=chatgpt.com)
   - It will recognise JSON no problem **see the testJSON file in the dev-pagination-sandbox branch**
@@ -78,3 +77,8 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
       - each item in the file is an object
       - the slugs are iterated over and their variables are accessed using slug.variable 
       - this populates all the different pages by filling in their respective attribute values
+
+      #### Dev pagination
+      - I followed the same logic as in sandbox above and reproduced the six pages using a for loop
+      - For the dashboard, I have implemented the page as three columns. Nunjucks loops can be nested to do three columns of two cards by putting the different cities in sets of two in a column nunjucks list and within this list doing an inner loop to produce the two cards. This is essentially a nested list. Lists are marked out in yaml by using "-"
+      
