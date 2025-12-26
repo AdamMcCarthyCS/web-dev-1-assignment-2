@@ -1,0 +1,91 @@
+columns:
+    # Sao Paulo
+
+  - cards:
+    - slug: saopaulo
+
+      # Current Weather Section 
+      current:
+        city: "Sao Paulo, Brazil"
+        precip: "5"
+        temp: 30
+        low: 21
+        high: 32
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun image"
+        
+    # London
+
+    # Page 
+    - slug: london
+
+      # Current Weather Section 
+      current:
+        city: "London, UK"
+        precip: "5"
+        temp: 9
+        low: 5
+        high: 9
+        img: "/assets/images/heavy-cloudy.svg"
+        imgAlt: "cloudy image"
+        
+    # Madras
+
+  - cards: 
+    - slug: madras
+
+      # Current Weather Section 
+      current:
+        city: "Madras, India"
+        precip: "0"
+        temp: 18
+        low: 7
+        high: 21
+        img: "/assets/images/moon-cloudy.svg"
+        imgAlt: "moon and cloud image"
+        
+    # Perth
+
+    # Page 
+    - slug: perth
+
+      # Current Weather Section 
+      current:
+        city: "Perth, Australia"
+        precip: "0"
+        temp: 14
+        low: 15
+        high: 23
+        img: "/assets/images/moon.svg"
+        imgAlt: "moon image"
+        
+    # Tokyo
+
+  - cards: 
+    - slug: tokyo
+
+      # Current Weather Section 
+      current:
+        city: "Tokyo, Japan"
+        precip: "5"
+        temp: 6
+        low: 2
+        high: 8
+        img: "/assets/images/moon.svg"
+        imgAlt: "moon image"
+        
+    # Volgograd
+
+    # Page 
+    - slug: volgograd
+
+      # Current Weather Section 
+      current:
+        city: "Volgograd, Russia"
+        precip: "80"
+        temp: -5
+        low: -7
+        high: 1
+        img: "/assets/images/light-snow.svg"
+        imgAlt: "light snow image"
+    
