@@ -1,0 +1,12 @@
+---
+layout: layout.njk
+pagination:
+  data: cityData
+  size: 1
+  alias: city
+permalink: "pages/cityPages/{{ city.slug }}/"
+---
+
+{% include "left-panel.njk" %}
+
+{% include "right-panel.njk" %}
