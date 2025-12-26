@@ -5,19 +5,19 @@
             <div class="card">
                 <article class="card-content is-flex is-flex-direction-column is-gap-2">
                     <div>
-                        <p class="is-size-3 has-text-weight-bold">{{ current.city }}</p>
-                        <p class="has-text-grey">Chance of precipitation: {{ current.precip }}%</p>
+                        <p class="is-size-3 has-text-weight-bold">{{ city.current.city }}</p>
+                        <p class="has-text-grey">Chance of precipitation: {{ city.current.precip }}%</p>
                     </div>
                     <div>
-                        <p class="is-size-3 has-text-weight-bold">Temp: {{current.temp}}&deg;C</p>
-                        <p class="has-text-grey">Lo/Hi: {{ current.low }}&deg;C/{{ current.high }}&deg;C</p>
+                        <p class="is-size-3 has-text-weight-bold">Temp: {{city.current.temp}}&deg;C</p>
+                        <p class="has-text-grey">Lo/Hi: {{ city.current.low }}&deg;C/{{ city.current.high }}&deg;C</p>
                     </div>
                 </article>
             </div>
         </div>
         <div class="column is-one-third">
             <figure class="image">
-                <img src="{{ current.img }}" alt="{{ current.imgAlt }}">
+                <img src="{{ city.current.img }}" alt="{{ city.current.imgAlt }}">
             </figure>
         </div>
     </section>
