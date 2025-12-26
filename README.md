@@ -60,3 +60,20 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 #### Eleventy refactor City page
 - Here I stumbled completely by mistake onto what I think is Eleventy's coolest feature. I realized after I had made all the variables into key, value pairs in YAML that some of the variables would exist on other Nunjucks template pages. I thought I was screwed and would have to abandon the idea of pagination because the variables exist on all separate pages. But when eleventy builds the pages it finds the variables in the other templates and fills them in as part of building the current page...CLASS...Genuinely, I was only moderately convinced by Eleventy until this moment, but now I think its great!!!
 - I refactored the todays forecast cards into a single loop by following [this template](https://mozilla.github.io/nunjucks/templating.html#for)
+#### Pagination Sandbox
+- This was the most painful part of the assignment so far. What I learned here
+  - Eleventy doesnt support YAML natively in _data folder [see here](https://www.11ty.dev/docs/data-custom/?utm_source=chatgpt.com)
+  - It will recognise JSON no problem **see the testJSON file in the dev-pagination-sandbox branch**
+  - You can use yaml but you need to install a plugin using: npm install js-yaml --save (the --save adds it as a dependency to the package.json file)
+
+  - You can generate multiple pages using the citypagetemplate.njk as in the front matter:
+    - pagination tells eleventy to loop over data/test
+    - size: 1 means each item generates one page (item marked out with "-" )
+    - alias is just a shorthand for the current page like a loop variable reprsenting a page as in {{page.someField}} is an attribute of that item like the name or greeting
+    - permalink generates a url for that page
+
+    - You can store the items to be filled in on each page in the [_data folder](https://www.11ty.dev/docs/data-global/) (which only supports JSON and JS files hence why I got stuck for several hours):
+      - the test.yaml file is a list
+      - each item in the file is an object
+      - the slugs are iterated over and their variables are accessed using slug.variable 
+      - this populates all the different pages by filling in their respective attribute values

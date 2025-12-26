@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "page-one",
+    "variables": {
+      "name": "Adam",
+      "greeting": "Hi there"
+    }
+  },
+  {
+    "slug": "page-two",
+    "variables": {
+      "name": "Leo",
+      "greeting": "Hey!!"
+    }
+  }
+]

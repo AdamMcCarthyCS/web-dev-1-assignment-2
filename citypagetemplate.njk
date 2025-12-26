@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+pagination:
+  data: test
+  size: 1
+  alias: city
+permalink: "/cityPages/{{ city.slug }}/"
+---
+<div class="card">
+    <div class="card-content">
+        <p class="title"> {{city.variables.greeting}} from {{city.variables.name}}</p>
+    </div>
+</div>
