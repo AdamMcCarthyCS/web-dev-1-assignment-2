@@ -1,10 +1,10 @@
-{% for key, day in week %}
+{% for key, day in city.week %}
 <!-- START FORECAST DAY-->
 <article class="card-content is-flex is-justify-content-space-between is-align-items-center">
     <p class="is-size-4">Today</p>
     <div class="is-flex is-align-items-center is-gap-1">
         <figure class="image is-64x64 is-inline-block">
-            <img src="{{ week.today.img }}" alt="{{ day.imgAlt}}">
+            <img src="{{ day.img }}" alt="{{ day.imgAlt}}">
         </figure>
         <p class="is-size-4 has-text-weight-bold">{{ day.desc}}</p>
     </div>
