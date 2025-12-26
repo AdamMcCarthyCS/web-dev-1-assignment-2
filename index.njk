@@ -6,168 +6,40 @@ layout: layout.njk
 
 
 <section class="columns is-gap-1 box is-centered">
-    <!-- START COLUMN 1-->
+    {% for column in dashboardCards.columns %}
+    <!-- START COLUMN-->
     <div class="column is-4 py-5">
-        <!-- START CLICKABLE CARD-->
-            <div class="is-flex is-flex-direction-column is-gap-3">
-                <a href="/pages/sao-paulo" class="box columns has-background-black is-vcentered">
-                                <div class="column is-two-thirds">
-                <div class="card">
-                    <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Sao Paulo, Brazil</p>
-                            <p class="has-text-grey">Chance of percipitation: 5%</p>
-                        </div>
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Temp: 30&deg;C</p>
-                            <p class="has-text-grey">Lo/Hi: 21&deg;C/32&deg;C</p>
-                        </div>
-                    </article>
+        <div class="is-flex is-flex-direction-column is-gap-3">
+            <!-- START CLICKABLE CARD-->
+             {% for card in column.cards %}
+            <a href="/pages/sao-paulo" class="box columns has-background-black is-vcentered">
+                <div class="column is-two-thirds">
+                    <div class="card">
+                        <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                            <div>
+                                <p class="is-size-4 has-text-weight-bold">Sao Paulo, Brazil</p>
+                                <p class="has-text-grey">Chance of percipitation: 5%</p>
+                            </div>
+                            <div>
+                                <p class="is-size-4 has-text-weight-bold">Temp: 30&deg;C</p>
+                                <p class="has-text-grey">Lo/Hi: 21&deg;C/32&deg;C</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-                                </div>
-                                <div class="column is-one-third is-flex is-justify-content-center">
-                <figure class="image is-128x128">
-                    <img src="/assets/images/sun-image.png" alt="clip art image of the sun">
-                </figure>
-                                </div>
-                            </a>
-                                <!-- END CLICKABLE CARD-->
-                
-                                <!-- START CLICKABLE CARD-->
-                <a href="pages/tokyo" class="box columns has-background-black is-vcentered">
-                                <div class="column is-two-thirds">
-                <div class="card">
-                    <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Tokyo, Japan</p>
-                            <p class="has-text-grey">Chance of percipitation: 10%</p>
-                        </div>
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Temp: 7&deg;C</p>
-                            <p class="has-text-grey">Lo/Hi: 5&deg;C/8&deg;C</p>
-                        </div>
-                    </article>
+                <div class="column is-one-third is-flex is-justify-content-center">
+                    <figure class="image is-128x128">
+                        <img src="/assets/images/sun-image.png" alt="clip art image of the sun">
+                    </figure>
                 </div>
-                                </div>
-                                <div class="column is-one-third is-flex is-justify-content-center">
-                <figure class="image is-128x128">
-                    <img src="/assets/images/moon-cloudy.svg" alt="clip art image of clouded moon">
-                </figure>
-                                </div>
-                            </a>
-            </div>
+            </a>
+            <!-- END CLICKABLE CARD-->
+            {% endfor %}
+        </div>
         <!-- END CLICKABLE CARD-->
     </div>
     <!-- END COLUMN 1-->
-        
-    <!-- START COLUMN 2-->
-    <div class="column is-4 py-5">
-        <!-- START CLICKABLE CARD-->
-            <div class="is-flex is-flex-direction-column is-gap-3">
-                <a href="/pages/london" class="box columns has-background-black is-vcentered">
-                                <div class="column is-two-thirds">
-                <div class="card">
-                    <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">London, England</p>
-                            <p class="has-text-grey">Chance of percipitation: 40%</p>
-                        </div>
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Temp: 6&deg;C</p>
-                            <p class="has-text-grey">Lo/Hi: 4&deg;C/6&deg;C</p>
-                        </div>
-                    </article>
-                </div>
-                                </div>
-                                <div class="column is-one-third is-flex is-justify-content-center">
-                <figure class="image is-128x128">
-                    <img src="/assets/images/sun-heavy-cloud.svg" alt="clip art image of clouded sun">
-                </figure>
-                                </div>
-                            </a>
-                                <!-- END CLICKABLE CARD-->
-                
-                                <!-- START CLICKABLE CARD-->
-                <a href="/pages/madras" class="box columns has-background-black is-vcentered">
-                                <div class="column is-two-thirds">
-                <div class="card">
-                    <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Madras, India</p>
-                            <p class="has-text-grey">Chance of percipitation: 0%</p>
-                        </div>
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Temp: 25&deg;C</p>
-                            <p class="has-text-grey">Lo/Hi: 23&deg;C/29&deg;C</p>
-                        </div>
-                    </article>
-                </div>
-                                </div>
-                                <div class="column is-one-third is-flex is-justify-content-center">
-                <figure class="image is-128x128">
-                    <img src="/assets/images/moon.svg" alt="clip art image of the moon">
-                </figure>
-                                </div>
-                            </a>
-            </div>
-        <!-- END CLICKABLE CARD-->
-    </div>
-    <!-- END COLUMN 2-->
-
-    <!-- START COLUMN 3-->
-    <div class="column is-4 py-5">
-        <!-- START CLICKABLE CARD-->
-            <div class="is-flex is-flex-direction-column is-gap-3 ">
-                <a href="/pages/perth" class="box columns has-background-black is-vcentered">
-                                <div class="column is-two-thirds">
-                <div class="card">
-                    <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Perth, Australia</p>
-                            <p class="has-text-grey">Chance of percipitation: 0%</p>
-                        </div>
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Temp: 30&deg;C</p>
-                            <p class="has-text-grey">Lo/Hi: 19&deg;C/39&deg;C</p>
-                        </div>
-                    </article>
-                </div>
-                                </div>
-                                <div class="column is-one-third is-flex is-justify-content-center">
-                <figure class="image is-128x128">
-                    <img src="/assets/images/moon-cloudy.svg" alt="clip art image of clouded moon">
-                </figure>
-                                </div>
-                            </a>
-                                <!-- END CLICKABLE CARD-->
-                
-                                <!-- START CLICKABLE CARD-->
-                <a href="/pages/volgograd" class="box columns has-background-black is-vcentered">
-                                <div class="column is-two-thirds">
-                <div class="card">
-                    <article class="card-content is-flex is-flex-direction-column is-gap-2">
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Volgograd, Russia</p>
-                            <p class="has-text-grey">Chance of percipitation: 15%</p>
-                        </div>
-                        <div>
-                            <p class="is-size-4 has-text-weight-bold">Temp: -7&deg;C</p>
-                            <p class="has-text-grey">Lo/Hi: -1&deg;C/-12&deg;C</p>
-                        </div>
-                    </article>
-                </div>
-                                </div>
-                            <div class="column is-one-third is-flex is-justify-content-center">
-                <figure class="image is-128x128">
-                    <img src="/assets/images/heavy-cloudy.svg" alt="clip art image of heavy-cloud">
-                </figure>
-                                </div>
-                            </a>
-            </div>
-        <!-- END CLICKABLE CARD-->
-    </div>
-    <!-- END COLUMN 3-->
-
+    {% endfor %}    
 </section>
 
     
