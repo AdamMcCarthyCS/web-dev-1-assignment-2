@@ -60,3 +60,26 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 #### Eleventy refactor City page
 - Here I stumbled completely by mistake onto what I think is Eleventy's coolest feature. I realized after I had made all the variables into key, value pairs in YAML that some of the variables would exist on other Nunjucks template pages. I thought I was screwed and would have to abandon the idea of pagination because the variables exist on all separate pages. But when eleventy builds the pages it finds the variables in the other templates and fills them in as part of building the current page...CLASS...Genuinely, I was only moderately convinced by Eleventy until this moment, but now I think its great!!!
 - I refactored the todays forecast cards into a single loop by following [this template](https://mozilla.github.io/nunjucks/templating.html#for)
+#### Dev pagination sandbox
+- This was the most painful part of the assignment so far. What I learned here
+  - Eleventy doesnt support YAML natively in _data folder [see here](https://www.11ty.dev/docs/data-custom/?utm_source=chatgpt.com)
+  - It will recognise JSON no problem **see the testJSON file in the dev-pagination-sandbox branch**
+  - You can use yaml but you need to install a plugin using: npm install js-yaml --save (the --save adds it as a dependency to the package.json file)
+
+  - You can generate multiple pages using the citypagetemplate.njk as in the front matter:
+    - pagination tells eleventy to loop over data/test
+    - size: 1 means each item generates one page (item marked out with "-" )
+    - alias is just a shorthand for the current page like a loop variable reprsenting a page as in {{page.someField}} is an attribute of that item like the name or greeting
+    - permalink generates a url for that page
+
+    - You can store the items to be filled in on each page in the [_data folder](https://www.11ty.dev/docs/data-global/) (which only supports JSON and JS files hence why I got stuck for several hours):
+      - the test.yaml file is a list
+      - each item in the file is an object
+      - the slugs are iterated over and their variables are accessed using slug.variable 
+      - this populates all the different pages by filling in their respective attribute values
+
+      #### Dev pagination
+      - I followed the same logic as in sandbox above and reproduced the six pages using a for loop
+      - For the dashboard, I have implemented the page as three columns. Nunjucks loops can be nested to do three columns of two cards by putting the different cities in sets of two in a column nunjucks list and within this list doing an inner loop to produce the two cards. This is essentially a nested list. Lists are marked out in yaml by using "-"
+      - The whole reason I did the loop on the dashboard page was so I could use the slug in each dashboardCards "card" to create a link which I could include in the anchor tag at pages/cityPages/{{ card.slug }}. This way I can use the cards as links to paginated pages and also have just a single piece of card html. Unfortunately I was too afraid to go near my working cityData.yaml as it took hours earlier to get it to work, so I ended up repeating the same data again in the file dashboardCards.yaml, with some small changes. Not very DRY, but I saved a lot of html by using loops so I think its a decent tradeoff.
+
