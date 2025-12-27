@@ -18,84 +18,82 @@
   # Current Weather Section 
   current:
     city: "Sao Paulo, Brazil"
-    precip: "5"
-    temp: 30
-    low: 21
-    high: 32
-    img: "/assets/images/sun-image.png"
-    imgAlt: "sun image"
+    precip: "8"
+    temp: 27
+    low: 20
+    high: 29
+    img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud"
 
   # Four card forecast for Today
   today:
     block1:
         time: "08:00"
         img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 21
+        imgAlt: "sun and cloud"
+        temp: 22
     block2:
         time: "12:00" 
         img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 28
+        imgAlt: "sun"
+        temp: 27
     block3:
         time: "16:00"
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 32
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        temp: 28
     block4:
         time: "20:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 26
+        img: "/assets/images/moon-cloudy.svg"
+        imgAlt: "cloudy night"
+        temp: 24
 
   # Weather info section 
   weatherInfo:
-    visibility: "37km"
-    feels: 32
-    maxWind: "8"
-    uvIdx: "10 (Very High)"
-    precipPerc: 0
-    humidity: 50
+    visibility: "10km"
+    feels: 29
+    maxWind: "14"
+    uvIdx: "8 (High)"
+    precipPerc: 60
+    humidity: 78
 
   # Seven day forecast section 
   week:
-    today:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Hot"
-        temp: 32
-    mon:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    tues:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 36
-    weds:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    thurs:
+    Today:
         img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 31
-    fri:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 30
-    sat:
-        img: "/assets/images/sun-rain-image.svg"
-        imgAlt: "sun and rain image"
-        desc: "Hot"
+        imgAlt: "sun and cloud"
+        desc: "Humid"
         temp: 28
-  
-    
+    Mon:
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        desc: "Showers"
+        temp: 27
+    Tues:
+        img: "/assets/images/sun-cloud-image.svg"
+        imgAlt: "sun and cloud"
+        desc: "Warm"
+        temp: 28
+    Weds:
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        desc: "Stormy"
+        temp: 26
+    Thurs:
+        img: "/assets/images/sun-cloud-image.svg"
+        imgAlt: "sun and cloud"
+        desc: "Cloudy"
+        temp: 27
+    Fri:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
+        desc: "Clear"
+        temp: 29
+    Sat:
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        desc: "Showers"
+        temp: 27
 
 
 # London
@@ -109,84 +107,82 @@
   # Current Weather Section 
   current:
     city: "London, UK"
-    precip: "5"
-    temp: 30
-    low: 21
-    high: 32
-    img: "/assets/images/sun-image.png"
-    imgAlt: "sun image"
+    precip: "12"
+    temp: 8
+    low: 3
+    high: 9
+    img: "/assets/images/heavy-cloudy.svg"
+    imgAlt: "heavy clouds"
 
   # Four card forecast for Today
   today:
     block1:
         time: "08:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 21
+        img: "/assets/images/heavy-cloudy.svg"
+        imgAlt: "heavy clouds"
+        temp: 4
     block2:
         time: "12:00" 
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 28
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "light cloud"
+        temp: 7
     block3:
         time: "16:00"
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 32
+        img: "/assets/images/driving-rain.svg"
+        imgAlt: "rain"
+        temp: 6
     block4:
         time: "20:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 26
+        img: "/assets/images/moon-cloudy.svg"
+        imgAlt: "cloudy night"
+        temp: 5
 
   # Weather info section 
   weatherInfo:
-    visibility: "37km"
-    feels: 32
-    maxWind: "8"
-    uvIdx: "10 (Very High)"
-    precipPerc: 0
-    humidity: 50
+    visibility: "8km"
+    feels: 3
+    maxWind: "22"
+    uvIdx: "1 (Low)"
+    precipPerc: 70
+    humidity: 88
 
   # Seven day forecast section 
   week:
-    today:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Hot"
-        temp: 32
-    mon:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    tues:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 36
-    weds:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    thurs:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 31
-    fri:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 30
-    sat:
-        img: "/assets/images/sun-rain-image.svg"
-        imgAlt: "sun and rain image"
-        desc: "Hot"
-        temp: 28
-  
-    
+    Today:
+        img: "/assets/images/heavy-cloudy.svg"
+        imgAlt: "overcast"
+        desc: "Cloudy"
+        temp: 7
+    Mon:
+        img: "/assets/images/driving-rain.svg"
+        imgAlt: "rain"
+        desc: "Rain"
+        temp: 8
+    Tues:
+        img: "/assets/images/heavy-rain.svg"
+        imgAlt: "heavy rain"
+        desc: "Heavy Rain"
+        temp: 7
+    Weds:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "light cloud"
+        desc: "light clouds"
+        temp: 6
+    Thurs:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "light clouds"
+        desc: "Cold"
+        temp: 4
+    Fri:
+        img: "/assets/images/heavy-cloudy.svg"
+        imgAlt: "cloudy"
+        desc: "Cold"
+        temp: 5
+    Sat:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "cloudy"
+        desc: "Cloudy"
+        temp: 6
 
 
 # Madras
@@ -200,84 +196,82 @@
   # Current Weather Section 
   current:
     city: "Madras, India"
-    precip: "5"
-    temp: 30
+    precip: "6"
+    temp: 26
     low: 21
-    high: 32
-    img: "/assets/images/sun-image.png"
-    imgAlt: "sun image"
+    high: 29
+    img: "/assets/images/sun-cloud-image.svg"
+    imgAlt: "sun and cloud"
 
   # Four card forecast for Today
   today:
     block1:
         time: "08:00"
         img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 21
+        imgAlt: "sun and cloud"
+        temp: 23
     block2:
         time: "12:00" 
         img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 28
+        imgAlt: "sun"
+        temp: 27
     block3:
         time: "16:00"
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 32
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        temp: 28
     block4:
         time: "20:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 26
+        img: "/assets/images/moon-cloudy.svg"
+        imgAlt: "cloudy night"
+        temp: 24
 
   # Weather info section 
   weatherInfo:
-    visibility: "37km"
-    feels: 32
-    maxWind: "8"
-    uvIdx: "10 (Very High)"
-    precipPerc: 0
-    humidity: 50
+    visibility: "9km"
+    feels: 28
+    maxWind: "18"
+    uvIdx: "6 (Moderate)"
+    precipPerc: 55
+    humidity: 80
 
   # Seven day forecast section 
   week:
-    today:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Hot"
-        temp: 32
-    mon:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    tues:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 36
-    weds:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    thurs:
+    Today:
         img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 31
-    fri:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 30
-    sat:
-        img: "/assets/images/sun-rain-image.svg"
-        imgAlt: "sun and rain image"
-        desc: "Hot"
+        imgAlt: "sun and cloud"
+        desc: "Humid"
         temp: 28
-
-  
+    Mon:
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        desc: "Rain"
+        temp: 27
+    Tues:
+        img: "/assets/images/sun-cloud-image.svg"
+        imgAlt: "sun and cloud"
+        desc: "Warm"
+        temp: 28
+    Weds:
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        desc: "Showers"
+        temp: 26
+    Thurs:
+        img: "/assets/images/sun-cloud-image.svg"
+        imgAlt: "sun and cloud"
+        desc: "Cloudy"
+        temp: 27
+    Fri:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
+        desc: "Clear"
+        temp: 29
+    Sat:
+        img: "/assets/images/sun-rain-image.svg"
+        imgAlt: "sun and rain"
+        desc: "Rain"
+        temp: 26
 
 
 # Perth
@@ -291,84 +285,82 @@
   # Current Weather Section 
   current:
     city: "Perth, Australia"
-    precip: "5"
-    temp: 30
-    low: 21
+    precip: "2"
+    temp: 29
+    low: 18
     high: 32
     img: "/assets/images/sun-image.png"
-    imgAlt: "sun image"
+    imgAlt: "sun"
 
   # Four card forecast for Today
   today:
     block1:
         time: "08:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 21
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
+        temp: 22
     block2:
         time: "12:00" 
         img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 28
+        imgAlt: "sun"
+        temp: 29
     block3:
         time: "16:00"
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 32
+        img: "/assets/images/sun-heavy-cloud.svg"
+        imgAlt: "sun and cloud"
+        temp: 31
     block4:
         time: "20:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 26
+        img: "/assets/images/moon.svg"
+        imgAlt: "clear night"
+        temp: 24
 
   # Weather info section 
   weatherInfo:
-    visibility: "37km"
-    feels: 32
-    maxWind: "8"
-    uvIdx: "10 (Very High)"
-    precipPerc: 0
-    humidity: 50
+    visibility: "20km"
+    feels: 30
+    maxWind: "16"
+    uvIdx: "9 (Very High)"
+    precipPerc: 10
+    humidity: 45
 
   # Seven day forecast section 
   week:
-    today:
+    Today:
         img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Hot"
-        temp: 32
-    mon:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    tues:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 36
-    weds:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    thurs:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
+        imgAlt: "sun"
         desc: "Hot"
         temp: 31
-    fri:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
+    Mon:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
         desc: "Hot"
+        temp: 33
+    Tues:
+        img: "/assets/images/sun-heavy-cloud.svg"
+        imgAlt: "sun and cloud"
+        desc: "Warm"
         temp: 30
-    sat:
-        img: "/assets/images/sun-rain-image.svg"
-        imgAlt: "sun and rain image"
+    Weds:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
+        desc: "Clear"
+        temp: 32
+    Thurs:
+        img: "/assets/images/sun-cloud-image.svg"
+        imgAlt: "sun and cloud"
+        desc: "Warm"
+        temp: 29
+    Fri:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
         desc: "Hot"
-        temp: 28
-  
-  
+        temp: 31
+    Sat:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
+        desc: "Hot"
+        temp: 32
 
 
 # Tokyo
@@ -382,84 +374,82 @@
   # Current Weather Section 
   current:
     city: "Tokyo, Japan"
-    precip: "5"
-    temp: 30
-    low: 21
-    high: 32
-    img: "/assets/images/sun-image.png"
-    imgAlt: "sun image"
+    precip: "3"
+    temp: 10
+    low: 4
+    high: 12
+    img: "/assets/images/light-cloud.svg"
+    imgAlt: "light cloud"
 
   # Four card forecast for Today
   today:
     block1:
         time: "08:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 21
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "light cloud"
+        temp: 5
     block2:
         time: "12:00" 
         img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 28
+        imgAlt: "sun"
+        temp: 10
     block3:
         time: "16:00"
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 32
+        img: "/assets/images/sun-cloud-image.svg"
+        imgAlt: "sun and cloud"
+        temp: 11
     block4:
         time: "20:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 26
+        img: "/assets/images/moon.svg"
+        imgAlt: "clear night"
+        temp: 7
 
   # Weather info section 
   weatherInfo:
-    visibility: "37km"
-    feels: 32
-    maxWind: "8"
-    uvIdx: "10 (Very High)"
-    precipPerc: 0
-    humidity: 50
+    visibility: "18km"
+    feels: 7
+    maxWind: "20"
+    uvIdx: "2 (Low)"
+    precipPerc: 20
+    humidity: 55
 
   # Seven day forecast section 
   week:
-    today:
+    Today:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "cloud"
+        desc: "Cool"
+        temp: 10
+    Mon:
         img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Hot"
-        temp: 32
-    mon:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    tues:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 36
-    weds:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    thurs:
+        imgAlt: "sun"
+        desc: "Clear"
+        temp: 12
+    Tues:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "cloud"
+        desc: "Cool"
+        temp: 9
+    Weds:
         img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 31
-    fri:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 30
-    sat:
-        img: "/assets/images/sun-rain-image.svg"
-        imgAlt: "sun and rain image"
-        desc: "Hot"
-        temp: 28
-
-    
+        imgAlt: "sun and cloud"
+        desc: "Mild"
+        temp: 11
+    Thurs:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "cloud"
+        desc: "Cool"
+        temp: 8
+    Fri:
+        img: "/assets/images/sun-image.png"
+        imgAlt: "sun"
+        desc: "Clear"
+        temp: 12
+    Sat:
+        img: "/assets/images/light-cloud.svg"
+        imgAlt: "cloud"
+        desc: "Cool"
+        temp: 9
 
 
 # Volgograd
@@ -473,81 +463,80 @@
   # Current Weather Section 
   current:
     city: "Volgograd, Russia"
-    precip: "5"
-    temp: 30
-    low: 21
-    high: 32
-    img: "/assets/images/sun-image.png"
-    imgAlt: "sun image"
+    precip: "4"
+    temp: -6
+    low: -12
+    high: -3
+    img: "/assets/images/light-snow.svg"
+    imgAlt: "light snow"
 
   # Four card forecast for Today
   today:
     block1:
         time: "08:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 21
+        img: "/assets/images/light-snow.svg"
+        imgAlt: "light snow"
+        temp: -10
     block2:
         time: "12:00" 
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 28
+        img: "/assets/images/heavy-snow.svg"
+        imgAlt: "heavy snow"
+        temp: -6
     block3:
         time: "16:00"
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        temp: 32
+        img: "/assets/images/snow-rain.svg"
+        imgAlt: "snow and rain"
+        temp: -4
     block4:
         time: "20:00"
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        temp: 26
+        img: "/assets/images/moon-cloudy.svg"
+        imgAlt: "cloudy night"
+        temp: -8
 
   # Weather info section 
   weatherInfo:
-    visibility: "37km"
-    feels: 32
-    maxWind: "8"
-    uvIdx: "10 (Very High)"
-    precipPerc: 0
-    humidity: 50
+    visibility: "4km"
+    feels: -14
+    maxWind: "28"
+    uvIdx: "0 (None)"
+    precipPerc: 65
+    humidity: 90
 
   # Seven day forecast section 
   week:
-    today:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Hot"
-        temp: 32
-    mon:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    tues:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 36
-    weds:
-        img: "/assets/images/sun-image.png"
-        imgAlt: "sun image"
-        desc: "Very Hot"
-        temp: 35
-    thurs:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 31
-    fri:
-        img: "/assets/images/sun-cloud-image.svg"
-        imgAlt: "sun and cloud image"
-        desc: "Hot"
-        temp: 30
-    sat:
-        img: "/assets/images/sun-rain-image.svg"
-        imgAlt: "sun and rain image"
-        desc: "Hot"
-        temp: 28
-    
-    
+    Today:
+        img: "/assets/images/light-snow.svg"
+        imgAlt: "light snow"
+        desc: "Freezing"
+        temp: -6
+    Mon:
+        img: "/assets/images/heavy-snow.svg"
+        imgAlt: "heavy snow"
+        desc: "Snow"
+        temp: -8
+    Tues:
+        img: "/assets/images/sleet.svg"
+        imgAlt: "sleet"
+        desc: "Sleet"
+        temp: -2
+    Weds:
+        img: "/assets/images/light-snow.svg"
+        imgAlt: "light snow"
+        desc: "Snow"
+        temp: -5
+    Thurs:
+        img: "/assets/images/heavy-cloudy.svg"
+        imgAlt: "cloudy"
+        desc: "Cold"
+        temp: -7
+    Fri:
+        img: "/assets/images/light-snow.svg"
+        imgAlt: "light snow"
+        desc: "Snow"
+        temp: -9
+    Sat:
+        img: "/assets/images/heavy-snow.svg"
+        imgAlt: "heavy snow"
+        desc: "Snow"
+        temp: -11
+
