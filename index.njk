@@ -16,7 +16,7 @@ eleventyNavigation:
         <div class="is-flex is-flex-direction-column is-gap-3">
             <!-- START CLICKABLE CARD-->
              {% for card in column.cards %}
-            <a href="/pages/cityPages/{{ card.slug }}" class="box columns has-background-black is-vcentered">
+            <a href="{{ card.url }}" class="box columns has-background-black is-vcentered">
                 <div class="column is-two-thirds">
                     <div class="card">
                         <article class="card-content is-flex is-flex-direction-column is-gap-2">
