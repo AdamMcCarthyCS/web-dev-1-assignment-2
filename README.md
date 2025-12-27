@@ -91,3 +91,5 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
       #### Eleventy Navigation Plugin
       - I can use the eleventy navigation plugin by nesting the dropdown template for pages inside the main template for pages which I found [here](https://www.11ty.dev/docs/plugins/navigation/#humans-md)
         - This way I can use a nested loop to create the pages inside the dropdown in nav.njk
+      - I used [this example](https://www.11ty.dev/docs/data-computed/?utm_source=chatgpt.com#real-world-example) from the eleventy docs to generate the pages within the Cities dropdown
+      - In order for all pages to appear in dropdown i need to include addAllPagesToCollection: true, this is from [here](https://www.11ty.dev/docs/pagination/#add-all-pagination-pages-to-collections)
