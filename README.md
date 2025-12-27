@@ -82,4 +82,5 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
       - I followed the same logic as in sandbox above and reproduced the six pages using a for loop
       - For the dashboard, I have implemented the page as three columns. Nunjucks loops can be nested to do three columns of two cards by putting the different cities in sets of two in a column nunjucks list and within this list doing an inner loop to produce the two cards. This is essentially a nested list. Lists are marked out in yaml by using "-"
       - The whole reason I did the loop on the dashboard page was so I could use the slug in each dashboardCards "card" to create a link which I could include in the anchor tag at pages/cityPages/{{ card.slug }}. This way I can use the cards as links to paginated pages and also have just a single piece of card html. Unfortunately I was too afraid to go near my working cityData.yaml as it took hours earlier to get it to work, so I ended up repeating the same data again in the file dashboardCards.yaml, with some small changes. Not very DRY, but I saved a lot of html by using loops so I think its a decent tradeoff.
-
+      #### Dev settings
+      - Added buttons on the settings panel by following [this](https://bulma.io/documentation/elements/button/#button-group-with-addons) example on the bulma documentation 
