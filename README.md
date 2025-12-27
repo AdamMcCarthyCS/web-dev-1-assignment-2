@@ -88,3 +88,6 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
       #### Misc Fixes
       - The page titles displayed beside the header are generated through pagination for the cities only. I used the Nunjucks "or" keyword and the front matter of the Dashboard and Settings pages to ensure that those pages also had a matching page title. I learned about the or keyword [here](https://mozilla.github.io/nunjucks/templating.html#logic)
       - This works the same as a short circuit expression in Python where it will use the first value it encounters which is 'truthy'. Hence when it finds the Settings or Template page it will have nothing from city.pageTitle (which is falsy) so will move onto pageTitle and will find the variable in the front matter and fill it in.
+      #### Eleventy Navigation Plugin
+      - I can use the eleventy navigation plugin by nesting the dropdown template for pages inside the main template for pages which I found [here](https://www.11ty.dev/docs/plugins/navigation/#humans-md)
+        - This way I can use a nested loop to create the pages inside the dropdown in nav.njk
