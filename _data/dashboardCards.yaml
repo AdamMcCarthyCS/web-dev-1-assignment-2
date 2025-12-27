@@ -4,7 +4,7 @@ columns:
 
   - cards:
     - slug: saopaulo
-
+      url: /city-pages/sao-paulo/
       # Current Weather Section 
       current:
         city: "Sao Paulo, Brazil"
@@ -19,7 +19,7 @@ columns:
 
     # Page 
     - slug: london
-
+      url: /city-pages/london/
       # Current Weather Section 
       current:
         city: "London, UK"
@@ -34,7 +34,7 @@ columns:
 
   - cards: 
     - slug: madras
-
+      url: /city-pages/madras/
       # Current Weather Section 
       current:
         city: "Madras, India"
@@ -49,7 +49,7 @@ columns:
 
     # Page 
     - slug: perth
-
+      url: /city-pages/perth/
       # Current Weather Section 
       current:
         city: "Perth, Australia"
@@ -64,7 +64,7 @@ columns:
 
   - cards: 
     - slug: tokyo
-
+      url: /city-pages/tokyo/
       # Current Weather Section 
       current:
         city: "Tokyo, Japan"
@@ -79,7 +79,7 @@ columns:
 
     # Page 
     - slug: volgograd
-
+      url: /city-pages/volgograd/
       # Current Weather Section 
       current:
         city: "Volgograd, Russia"
