@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+
+pagination:
+  data: cityData
+  size: 1
+  alias: city
+permalink: "/city-pages/{{ city.slug }}/index.html"
+eleventyNavigation:
+  parent: "Cities"
+  key: "{{ city.pageTitle }}"
+---
+
+{% include "left-panel.njk" %}
+
+{% include "right-panel.njk" %}
