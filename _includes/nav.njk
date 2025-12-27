@@ -20,7 +20,7 @@
                 {% set navPages = collections.all | eleventyNavigation %}
 
                 {% for entry in navPages %}
-                    {% if entry.children %}
+                    {% if entry.children and entry.children.length > 0 %}
                         <!-- This is where the dropdown gets generated -->
                         <div href="" class="navbar-item has-dropdown is-hoverable">
                             <a href="" class="navbar-link has-text-white is-size-5">{{ entry.title }}</a>
