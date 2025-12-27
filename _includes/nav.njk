@@ -21,9 +21,18 @@
 
                 {% for entry in navPages %}
                     {% if entry.children and entry.children.length > 0 %}
+
+                    <!-- Here I will make a variable to store if any of the cities are active. If they are I will make the cities item on the navbar active also-->
+                     {% set cityActive = false %}
+                        {% for child in entry.children %}
+                            {% if child.url == page.url %}
+                            {% set cityActive = true %}
+                            {% endif %}
+                        {% endfor %}
+
                         <!-- This is where the dropdown gets generated -->
                         <div href="" class="navbar-item has-dropdown is-hoverable">
-                            <a href="" class="navbar-link has-text-white is-size-5">{{ entry.title }}</a>
+                            <a href="" class="navbar-link has-text-white is-size-5 {% if cityActive%}is-active{% endif %}">{{ entry.title }}</a>
                             <div class="navbar-dropdown">
                                 {% for child in entry.children %}
                                 <a href="{{ child.url | url }}" class="navbar-item is-size-6 {% if child.url == page.url %}is-active{% endif %}">{{ child.title }}</a>
