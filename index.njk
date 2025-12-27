@@ -1,10 +1,13 @@
 --- 
 layout: layout.njk 
 pageTitle: Dashboard
+eleventyNavigation:
+  key: Dashboard
+  order: 1
 ---
 
 <!-- START INTERACTIVE CARDS-->
-
+ 
 
 <section class="columns is-gap-1 box is-centered">
     {% for column in dashboardCards.columns %}
