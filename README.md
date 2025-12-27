@@ -85,3 +85,6 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
       #### Dev settings
       - Added buttons on the settings panel by following [this](https://bulma.io/documentation/elements/button/#button-group-with-addons) example on the bulma documentation 
       - I could have refactored the buttons using a Nunjucks loop and a YAML file, but I chose not to as each button would have its own logic associated with it.
+      #### Misc Fixes
+      - The page titles displayed beside the header are generated through pagination for the cities only. I used the Nunjucks "or" keyword and the front matter of the Dashboard and Settings pages to ensure that those pages also had a matching page title. I learned about the or keyword [here](https://mozilla.github.io/nunjucks/templating.html#logic)
+      - This works the same as a short circuit expression in Python where it will use the first value it encounters which is 'truthy'. Hence when it finds the Settings or Template page it will have nothing from city.pageTitle (which is falsy) so will move onto pageTitle and will find the variable in the front matter and fill it in.
