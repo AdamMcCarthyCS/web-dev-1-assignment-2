@@ -93,3 +93,6 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
         - This way I can use a nested loop to create the pages inside the dropdown in nav.njk
       - I used [this example](https://www.11ty.dev/docs/data-computed/?utm_source=chatgpt.com#real-world-example) from the eleventy docs to generate the pages within the Cities dropdown
       - In order for all pages to appear in dropdown i need to include addAllPagesToCollection: true, this is from [here](https://www.11ty.dev/docs/pagination/#add-all-pagination-pages-to-collections)
+      #### Deployment to Netlify
+      - Added build key to package.json following [this](https://11ty.rocks/posts/create-your-first-basic-11ty-website/?utm_source=chatgpt.com#:~:text=Begin%20the%20Project-,%23,-Open%20a%20new) webpage's instructions for deployment
+        - following [these](https://11ty.rocks/posts/create-your-first-basic-11ty-website/?utm_source=chatgpt.com#connect-to-netlify-and-deploy) steps
