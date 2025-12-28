@@ -52,7 +52,7 @@ The site contains:
 ### Install Eleventy
 
 ```bash
-npm install -g @11ty/eleventy
+npm install @11ty/eleventy js-yaml
 ```
 
 ### Run Eleventy
