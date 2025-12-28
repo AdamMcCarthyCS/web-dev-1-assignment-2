@@ -1,0 +1,51 @@
+--- 
+layout: layout.njk 
+pageTitle: Dashboard
+eleventyNavigation:
+  key: Dashboard
+  order: 1
+---
+
+<!-- START INTERACTIVE CARDS-->
+ 
+
+<section class="columns is-gap-1 box is-centered">
+    {% for column in dashboardCards.columns %}
+    <!-- START COLUMN-->
+    <div class="column is-4 py-5">
+        <div class="is-flex is-flex-direction-column is-gap-3">
+            <!-- START CLICKABLE CARD-->
+             {% for card in column.cards %}
+            <a href="{{ card.url }}" class="box columns has-background-black is-vcentered">
+                <div class="column is-two-thirds">
+                    <div class="card">
+                        <article class="card-content is-flex is-flex-direction-column is-gap-2">
+                            <div>
+                                <p class="is-size-4 has-text-weight-bold">{{ card.current.city }}</p>
+                                <p class="has-text-grey">Chance of percipitation: {{ card.current.precip }}%</p>
+                            </div>
+                            <div>
+                                <p class="is-size-4 has-text-weight-bold">Temp: {{ card.current.temp }}&deg;C</p>
+                                <p class="has-text-grey">Lo/Hi: {{ card.current.low }}&deg;C/{{ card.current.high}} &deg;C</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="column is-one-third is-flex is-justify-content-center">
+                    <figure class="image is-128x128">
+                        <img src="{{ card.current.img }}" alt="{{ card.current.imgAlt }}">
+                    </figure>
+                </div>
+            </a>
+            <!-- END CLICKABLE CARD-->
+            {% endfor %}
+        </div>
+        <!-- END CLICKABLE CARD-->
+    </div>
+    <!-- END COLUMN 1-->
+    {% endfor %}    
+</section>
+
+    
+<!-- END INTERACTIVE CARDS-->
+   

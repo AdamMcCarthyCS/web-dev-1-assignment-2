@@ -1,0 +1,19 @@
+<!-- START LEFT PANEL -->
+
+            {% include "left-panel-current-weather.njk" %}
+
+            <!-- TODAYS FORECAST START -->
+            <section class="container columns is-mobile is-multiline has-text-centered box has-background-black ">
+                <div class="column is-12 has-text-light is-size-3">
+                    <h2 class="has-text-weight-bold">Todays Forecast</h2>
+                </div>
+                
+                
+                {% include "left-panel-forecast-cards.njk" %}
+                {% include "left-panel-weather-info.njk" %}
+            </section>
+            <!-- TODAYS FORECAST END -->
+
+            
+
+        <!-- END LEFT PANEL -->

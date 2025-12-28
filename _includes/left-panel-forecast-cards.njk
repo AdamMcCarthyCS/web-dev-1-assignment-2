@@ -1,0 +1,21 @@
+{% for key, block in city.today %}
+<!-- FOUR HOUR FORECAST START-->
+<div class="column is-one-quarter">
+    <article class="card">
+        <div class="card-header is-justify-content-center">
+            <p class="card-header-title is-centered is-size-4 is-size-6-mobile">{{ block.time }}</p>
+        </div>
+        <div class="card-image">
+            <figure class="image is-inline-block">
+                <img src="{{ block.img }}" alt="{{ block.imgAlt }}">
+            </figure>
+        </div>
+        <div class="card-footer is-justify-content-center">
+            <div class="card-footer-item is-size-3 is-size-5-mobile">
+                {{ block.temp }}&deg;C
+            </div>
+        </div>
+    </article>
+</div>
+<!-- FOUR HOUR FORECAST END-->
+ {% endfor %}

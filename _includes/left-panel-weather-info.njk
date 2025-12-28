@@ -1,0 +1,51 @@
+<!-- WEATHER INFO START -->
+            <div class="column my-6">
+                <section class="card has-background-black-ter has-text-white p-4">
+                    <h2 class="title has-text-white has-text-centered is-12">Weather Info</h2>
+                
+                    <div class="is-flex is-justify-content-space-between">
+                        <div class="is-flex is-flex-direction-column is-gap-2">
+                            <div class="is-flex is-align-items-center is-gap-1">
+                                <figure class="image is-32x32">
+                                    <img src="/assets/images/wi-visibility.svg" alt="sun icon">
+                                </figure>
+                                <p class="is-size-5 has-text-weight-bold">Visibility: {{ city.weatherInfo.visibility }}</p>
+                            </div>
+                            <div class="is-flex is-align-items-center is-gap-1">
+                                <figure class="image is-32x32">
+                                    <img src="/assets/images/wi-thermometer.svg" alt="sun icon">
+                                </figure>
+                                <p class="is-size-5 has-text-weight-bold">Feels Like: {{ city.weatherInfo.feels }}&deg;C</p>
+                            </div>
+                            <div class="is-flex is-align-items-center is-gap-1">
+                                <figure class="image is-32x32">
+                                    <img src="/assets/images/wi-strong-wind.svg" alt="sun icon">
+                                </figure>
+                                <p class="is-size-5 has-text-weight-bold">Max Wind: {{ city.weatherInfo.maxWind }}km/h</p>
+                            </div>
+                        </div>
+                        <div class="is-flex is-flex-direction-column is-gap-2">
+                            <div class="is-flex is-align-items-center is-gap-1">
+                                <figure class="image is-32x32">
+                                    <img src="/assets/images/wi-uv.svg" alt="sun icon">
+                                </figure>
+                                <p class="is-size-5 has-text-weight-bold">UV Index: {{ city.weatherInfo.uvIdx }}</p>
+                            </div>
+                            <div class="is-flex is-align-items-center is-gap-1">
+                                <figure class="image is-32x32">
+                                    <img src="/assets/images/wi-raindrop.svg" alt="raindrop icon">
+                                </figure>
+                                <p class="is-size-5 has-text-weight-bold">Precipitation: {{ city.weatherInfo.precipPerc }}mm expected</p>
+                            </div>
+                            <div class="is-flex is-align-items-center is-gap-1">
+                                <figure class="image is-32x32">
+                                    <img src="/assets/images/wi-humidity.svg" alt="">
+                                </figure>
+                                <p class="is-size-5 has-text-weight-bold">Humidity: {{ city.weatherInfo.humidity }}%</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                        </div>
+                        <!-- WEATHER INFO END -->
+            </div>
